@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gothic&family=UnifrakturCook&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
+#landing-page {
+    position: relative;
+}
+
+.class2 {
+    color: red
+}
+.class3 {
+    color:blue
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+width: 100%;
+height: 100vh;
+margin: 0;
+padding: 0;
+display: grid;
+grid-template-columns: 15% 85%;
+    background: #00000010;
+overflow: hidden;
+}
+
+.class{
+margin: 0;
+overflow: hide;
+}
+.col-1 {
+    background: #000;
+}
+.col-2 {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(170px, 1fr));
+ gap: 0;
+    background-image:url('https://i.pinimg.com/736x/ea/d2/6f/ead26f64ee38e87af6ad74d8c943bf6c.jpg'), url('https://i.pinimg.com/originals/17/05/d5/1705d5e830845e0f592eb00181dfb8a1.jpg'), url('https://i.pinimg.com/564x/61/9e/f3/619ef3b5df90a73b3392e8e7e9da6214.jpg');
+background-repeat: no-repeat;
+background-size: contain;
+background-position:left, center ,right;
+background-color: black;
+z-index: 0;
+}
+
+.container-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background: transparent;
+    text-align: center;
+    padding: auto 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    color: #fff;
+}
+
+.container-3 {
+    width: 100vw;
+    height: 100vh;
+     font-family: "UnifrakturCook", "Noto Sans Gothic", sans-serif;
+    font-weight: 700;
+     font-style: normal;
+     background: transparent;
+     z-index: 1;
+    
+      
+      
+}
+
+.primary-heading{
+    font-size: 7rem;
+    letter-spacing: 0.02em;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  .description-header {
+    font-family: 'Old English Text MT', serif;
+    font-size: 10rem;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .description {
+    font-family: "Slackside One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    width: auto;
+    padding: 50px 50px 0 50px;
+    text-align: center;
+  }
+
+.font-small {
+    font-size: 5rem;
+}
+.font-small-desc {
+    margin-top: 30px;
+}
+.description-ul {
+    list-style-type: none;
+width: 100%;
+    margin-top: 40px;
+}
+.description-ul > li {
+    padding: 30px 0;
+    border-bottom: 1px solid #fff;
+}
+.description-ul > li:first-child {
+
+    border-top: 1px solid #fff;
+}
+
+.container-3:last-of-type{
+    height: 80vh;
+}
+
+.info {
+    height: fit-content;
+    position: relative;
+}
+.container-3:first-of-type {
+    padding-top: 100px;
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+ 
+}
+
+.carousel {
+    display: none;
+}
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 0 100%;
+    }
+    .col-2 {
+        display: none;
+    }
+    .carousel {
+        display: block;
+    }
+    .slide {
+        background-size: contain;
+        width: 100%;
+        background-position: center;
+        background: linear-gradient(#e66465, #9198e5);
+
+    }
+
+    .primary-heading{
+        font-size: 5rem;
+        letter-spacing: 0.02em;
+        width: 100%;
+    }
+    .description-header {
+        font-size: 7rem;
+    }
+    .font-small {
+        font-size: 3.5rem;
+    }
+
+    .font-small-desc , .description{
+        font-size: 1.1rem;
+        word-spacing: 1.5px;
+        line-height: 2.2rem;    
+    }
+    .container-3 {
+        height: fit-content;
+        margin: 20px;
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 470px) {
+    .primary-heading{
+        font-size: 3rem;
+        letter-spacing: 0.02em;
+        width: 100%;
+    }
+    .description-header {
+        font-size: 3.5rem;
+    }
+    .font-small {
+        font-size: 3.5rem;
+    }
+    .font-small-desc , .description{
+       font-size: 1rem;
+      
+    }
+    .container-3 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+}
